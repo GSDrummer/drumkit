@@ -1,4 +1,3 @@
-
 body { 
 	text-align: center; 
 	background-image: url(images/drumKit.jpg);
@@ -8,6 +7,7 @@ body {
 
 h1 { 
 	font-size: 5rem; 
+	user-select: none;
 	font-family:Arial, Helvetica, sans-serif;
 	color: #2fb119; 
 	text-shadow: 3px 3px #130f0f; 
@@ -16,28 +16,31 @@ h1 {
 
 
 #buttons{ 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+	width: 60px;
+	height: 60px;
 	cursor: pointer;
 	text-transform: uppercase; 
-	font-family:Verdana, Geneva, Tahoma, sans-serif;
-	outline: none;
+	font-family:Verdana,Tahoma, sans-serif;
 	border: 5px solid #2fb119; 
 	font-size: 20px;
 	font-weight: bold; 
 	color: #000000;  
-	border-radius: 15px;  
-	margin: 10px; 
+	border-radius: 15px;   
 	background-color: white;
 } 
 
-#buttons:active { 
-	box-shadow: 0 3px 4px 0 #DBEDF3; 
+#buttons:active {
+	background-color: rgba(240, 248, 255, 0.5);
+	border: 5px solid rgba(48, 177, 25, 0.5);
 	opacity: 0.5; 
 } 
 
 .snare{
 	position: absolute;
-	width: 50px;
-	height: 50px;
 	left:703px;
 	bottom: 260px;
 }
@@ -47,32 +50,24 @@ h1 {
 }
 .tom{
 	position: absolute;
-	width: 50px;
-	height: 50px;
 	left:775px;
 	bottom: 530px;
 }
 
 .hihat{
 	position: absolute;
-	width: 50px;
-	height: 50px;
 	left: 380px;
 	bottom: 450px;
 }
 
 .kick{
 	position: absolute;
-	width: 50px;
-	height: 50px;
 	left: 910px;
 	bottom: 320px;
 }
 
 .openHi{
 	position: absolute;
-	width: 50px;
-	height: 50px;
 	left: 320px;
 	bottom: 520px;
 }
@@ -80,16 +75,12 @@ h1 {
 
 .ride{
 	position: absolute;
-	width: 50px;
-	height: 50px;
 	right: 570px;
 	bottom: 310px;
 }
 
 .crash{
 	position:absolute;
-	width: 50px;
-	height: 50px;
 	right: 730px;
 	bottom: 650px;
 }
